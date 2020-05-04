@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <h2>Comp A</h2>
+  <div id="app">
+    <div class="player-container">
+      <vue-core-video-player src="https://www.youtube.com/watch?v=rZseBpPufLI"></vue-core-video-player>
+    </div>
   </div>
 </template>
 

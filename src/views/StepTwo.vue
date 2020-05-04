@@ -3,6 +3,7 @@
     <h1>Step 2</h1>
     <sidebar :desc="desc"></sidebar>
     <comp-c></comp-c>
+    <vm></vm>
   </div>
 </template>
 

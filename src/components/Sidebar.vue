@@ -1,15 +1,25 @@
 <template>
-  <div>
-    <h2>Sidebar</h2>
-    <div>Video</div>
-    <h3>Description</h3>
-    <p>{{ desc }}</p>
+  <div id="instruc">
+        <table>
+            <tr>
+                <td><p>Opgave:</p></td>
+                <td><P>{{ task }}</p></td>
+            </tr>
+            <tr>
+                <td>Instruction:</td>
+                <td><p>{{ desc }}</P></td>
+            </tr>
+        </table>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["desc"]
+  props: {
+    task: String,
+    desc: String
+  }
+  ["desc"]
 };
 </script>
 
