@@ -21,26 +21,24 @@ export default {
     CompB,
     Sidebar
   },
-    created: function () {
-      this.loadData();
-    },
-    methods: {
-      loadData: function () {
-        this.status = "Loading..."
-        axios.get("@/assets/Json/Instructions.json" + this.$route.params.id)
-        .then((result) => {
-        self.desc = result.data;
-        console.log(self.desc);
-
-        })
-      }
-    },
+  created: function() {
+    this.loadData();
+  },
+  methods: {
+    loadData: function() {
+      this.status = "Loading...";
+      axios
+        .get("@/assets/Json/Instructions.json" + this.$route.params.id)
+        .then(result => {
+          self.desc = result.data;
+          console.log(self.desc);
+        });
+    }
+  },
   data() {
     return {
-      title: '',
-      
+      title: ""
     };
-    
   }
 };
 </script>
