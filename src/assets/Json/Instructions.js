@@ -1,6 +1,4 @@
-{
-    "instruction" : [
-        {
+const instruction = [{
             "id": 1,
             "title": "1",
             "task": "Kig på problem og visualiseringen af problemstillingen.",
@@ -53,6 +51,6 @@
             "title": "5.1",
             "task": "Skriv hvordan i vil bruge de valgte teknologier til at løse jeres problem.",
             "desc": "fylde tekst"
-        }
-    ]
-}
+        }];
+
+    export defualt instruction;
